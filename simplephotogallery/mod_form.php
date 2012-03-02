@@ -48,7 +48,7 @@ class mod_simplephotogallery_mod_form extends moodleform_mod {
 
         // Adding the standard "name" field
         $mform->addElement('text', 'name', get_string('simplephotogalleryname', 'simplephotogallery'), array('size'=>'64'));
-        if (!empty($CFG->formatstringstriptags)) {
+       if (!empty($CFG->formatstringstriptags)) {
             $mform->setType('name', PARAM_TEXT);
         } else {
             $mform->setType('name', PARAM_CLEAN);
@@ -56,15 +56,11 @@ class mod_simplephotogallery_mod_form extends moodleform_mod {
         $mform->addRule('name', null, 'required', null, 'client');
         $mform->addRule('name', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
 
-        // Adding the standard "intro" and "introformat" fields
-
-        //-------------------------------------------------------------------------------
-        // Adding the rest of simplephotogallery settings, spreeading all them into this fieldset
-        // or adding more fieldsets ('header' elements) if needed for better logic
-
         $mform->addElement('text', 'flickrseturl', 'Flickr Set URL',array('size'=>'64'));
         $mform->addRule('flickrseturl', null, 'required', null, 'client');
         $mform->addRule('flickrseturl', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
+
+        $this->add_intro_editor();
 
         //-------------------------------------------------------------------------------
         // add standard elements, common to all modules

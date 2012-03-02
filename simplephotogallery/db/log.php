@@ -23,8 +23,7 @@
  * in the previous 1.9 simplephotogallery.
  *
  * @package    mod * @subpackage simplephotogallery 
- * @copyright  2012 Liam Mann | LiamMann.com
-<your@email.adress>
+ * @copyright  2012 Liam Mann | LiamMann.com <your@email.adress>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

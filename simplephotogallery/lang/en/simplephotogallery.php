@@ -30,16 +30,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'simplephotogallery';
+$string['modulename'] = 'Simple Photo Gallery';
 $string['modulenameplural'] = 'Photo Gallerys';
 $string['simplephotogalleryname'] = 'Name';
 
 
-$string['simplephotogallery'] = 'simplephotogallery';
-$string['pluginadministration'] = 'simplephotogallery Settings';
-$string['pluginname'] = 'simplephotogallery';
+$string['simplephotogallery'] = 'Simple Gallery Settings';
+$string['pluginadministration'] = 'Simple Gallery Settings';
+$string['pluginname'] = 'Simple Photo Gallery';
 
-$string['flickrliam'] = 'simplephotogallery';
+$string['flickrliam'] = 'Simple Gallery Settings ';
 $string['flickrliam_help'] = 'For example';
 
 
