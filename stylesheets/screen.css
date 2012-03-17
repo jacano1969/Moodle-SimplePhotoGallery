@@ -1,0 +1,224 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 20, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1; }
+
+/* line 22, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 24, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 26, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 28, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 101, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 30, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 114, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 8, ../sass/screen.scss */
+body {
+  width: 800px;
+  margin: 20px auto;
+  background: url(../img/bg.png);
+  font-family: Helvetica, Arial; }
+  /* line 14, ../sass/screen.scss */
+  body header {
+    width: 698px;
+    margin: auto;
+    background: pink;
+    position: relative; }
+    /* line 20, ../sass/screen.scss */
+    body header a {
+      float: left;
+      display: block;
+      padding: 10px 15px;
+      margin: 10px; }
+      /* line 25, ../sass/screen.scss */
+      body header a:hover {
+        background: rgba(50, 50, 50, 0.15);
+        box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.45) inset;
+        border-radius: 10px; }
+    /* line 32, ../sass/screen.scss */
+    body header .mylogo {
+      margin: 10px;
+      padding: 20px 15px; }
+      /* line 36, ../sass/screen.scss */
+      body header .mylogo:before {
+        content: "";
+        float: left;
+        height: 90px;
+        border-radius: 200px;
+        position: absolute;
+        left: 552px;
+        top: 20px;
+        width: 4px;
+        background: rgba(0, 0, 0, 0.1); }
+  /* line 49, ../sass/screen.scss */
+  body section {
+    float: left;
+    width: 440px;
+    clear: both; }
+    /* line 53, ../sass/screen.scss */
+    body section p {
+      line-height: 20px;
+      font-size: 16px; }
+    /* line 58, ../sass/screen.scss */
+    body section li {
+      list-style: square inside;
+      margin: 5px 10px; }
+    /* line 63, ../sass/screen.scss */
+    body section h2 {
+      margin: 20px 0 0 0;
+      font-family: "museo";
+      font-size: 28px; }
+    /* line 68, ../sass/screen.scss */
+    body section h3 {
+      margin: 20px 0 0 0;
+      font-family: "museo";
+      font-size: 22px; }
+  /* line 74, ../sass/screen.scss */
+  body div {
+    float: right;
+    width: 300px; }
+    /* line 78, ../sass/screen.scss */
+    body div span {
+      display: block;
+      float: left;
+      background: #fafafa;
+      margin: 16px 0;
+      padding: 8px 8px 6px 8px;
+      border-radius: 10px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.65);
+      -webkit-transform: rotate(3deg); }
+      /* line 87, ../sass/screen.scss */
+      body div span img {
+        border-radius: 6px; }
+      /* line 91, ../sass/screen.scss */
+      body div span:nth-child(even) {
+        -webkit-transform: rotate(-2deg); }
+
+/* line 99, ../sass/screen.scss */
+.download {
+  /* http://designshack.net/articles/css/downloadbutton/ */
+  /*BUTTON STYLES*/
+  /*HOVER*/ }
+  /* line 103, ../sass/screen.scss */
+  .download .button {
+    width: 200px;
+    margin: 50px;
+    float: left;
+    /*FOR DISPLAY ONLY*/ }
+  /* line 109, ../sass/screen.scss */
+  .download .button a {
+    display: block;
+    height: 50px;
+    width: 200px;
+    /*TYPE*/
+    color: white;
+    font: 17px/50px Helvetica, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    /*GRADIENT*/
+    background: #00b7ea;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #00b7ea 0%, #009ec3 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00b7ea), color-stop(100%, #009ec3));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #00b7ea 0%, #009ec3 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #00b7ea 0%, #009ec3 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #00b7ea 0%, #009ec3 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #00b7ea 0%, #009ec3 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 );
+    /* IE6-9 */ }
+  /* line 132, ../sass/screen.scss */
+  .download .button a, .download .button p {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); }
+  /* line 142, ../sass/screen.scss */
+  .download .button p {
+    background: #222;
+    display: block;
+    height: 40px;
+    width: 180px;
+    margin: -45px 0 0 10px;
+    /*TYPE*/
+    text-align: center;
+    font: 12px/45px Helvetica, Verdana, sans-serif;
+    color: #fff;
+    /*POSITION*/
+    position: absolute;
+    z-index: -1;
+    /*TRANSITION*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  /* line 167, ../sass/screen.scss */
+  .download .button:hover .bottom {
+    margin: -10px 0 0 10px; }
+  /* line 171, ../sass/screen.scss */
+  .download .button:hover .top {
+    margin: -80px 0 0 10px;
+    line-height: 35px; }
+  /* line 176, ../sass/screen.scss */
+  .download .button:hover .right {
+    margin: -45px 0 0 190px;
+    width: 100px; }
+  /* line 181, ../sass/screen.scss */
+  .download .button:hover .left {
+    margin: -45px 0 0 -90px;
+    width: 100px; }

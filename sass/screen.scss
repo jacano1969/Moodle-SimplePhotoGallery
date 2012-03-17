@@ -1,0 +1,186 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+body {
+	width: 800px;
+	margin: 20px auto;
+	background: url(../img/bg.png);
+	font-family: Helvetica, Arial;
+	
+	header {
+	width: 698px;
+	margin: auto;
+	background: pink;
+	position: relative;
+	
+		a {
+			float: left;
+			display: block;
+			padding:10px 15px;
+			margin: 10px;
+			&:hover{
+				background: rgba(50,50,50,0.15);
+				box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.45) inset;
+				border-radius: 10px;
+			}
+		}
+		
+		.mylogo {
+			margin: 10px;
+			padding:20px 15px;
+		
+			&:before {
+				content: "";
+				float: left;
+				height: 90px;
+				border-radius: 200px;
+				position: absolute;
+				left: 552px;
+				top:20px;
+				width: 4px;
+				background: rgba(0,0,0,0.1);
+			}
+		}		
+	}
+	section {
+		float: left;
+		width: 440px;
+		clear: both;
+		p {
+			line-height: 20px;
+			font-size: 16px;
+		}
+		
+		li {
+			list-style: square inside;
+			margin: 5px 10px;
+		}
+	
+		h2 {
+			margin: 20px 0 0 0;
+			font-family: "museo";
+			font-size: 28px;
+		}
+		h3 {
+			margin: 20px 0 0 0;
+			font-family: "museo";
+			font-size: 22px;
+		}
+	}
+	div {
+		float: right;
+		width: 300px;
+		
+		span {
+			display: block;
+			float: left;
+			background: rgb(250,250,250);
+			margin: 16px 0;
+			padding: 8px 8px 6px 8px;
+			border-radius: 10px;
+			box-shadow: 0 0 3px rgba(0,0,0,0.65);
+			-webkit-transform: rotate(3deg);
+			img {
+				border-radius: 6px;
+			}
+			
+			&:nth-child(even){
+				-webkit-transform: rotate(-2deg);
+			}
+			
+			
+		}
+	}
+}
+.download {
+/* http://designshack.net/articles/css/downloadbutton/ */
+
+/*BUTTON STYLES*/
+.button {
+  width: 200px;
+  margin: 50px;
+  float: left; /*FOR DISPLAY ONLY*/
+}
+
+.button a {
+  display: block;
+  height: 50px;
+  width: 200px;
+  
+  /*TYPE*/
+  color: white;
+  font: 17px/50px Helvetica, Verdana, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  
+  /*GRADIENT*/  
+  background: #00b7ea; /* Old browsers */
+  background: -moz-linear-gradient(top, #00b7ea 0%, #009ec3 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b7ea), color-stop(100%,#009ec3)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* IE10+ */
+  background: linear-gradient(top, #00b7ea 0%,#009ec3 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
+}
+
+.button a, .button p {
+    -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  
+  -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+     -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+          box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.button p {
+  background: #222;
+  display: block;
+  height: 40px;
+  width: 180px; 
+  margin: -45px 0 0 10px;
+  
+  /*TYPE*/
+  text-align: center;
+  font: 12px/45px Helvetica, Verdana, sans-serif;
+  color: #fff;
+  
+  /*POSITION*/
+  position: absolute;
+  z-index: -1;
+  
+  /*TRANSITION*/  
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+/*HOVER*/
+.button:hover .bottom {
+  margin: -10px 0 0 10px;
+}
+
+.button:hover .top {
+  margin: -80px 0 0 10px;
+  line-height: 35px;
+}
+
+.button:hover .right {
+  margin: -45px 0 0 190px;
+  width: 100px;
+}
+
+.button:hover .left {
+  margin: -45px 0 0 -90px;
+  width: 100px;
+}
+
+}
